@@ -6,8 +6,21 @@
 
 
 
-#supporting-2{
-  background: #222;
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 300px; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+.img-circle{
+  width: 100px;
+  height: 100px;
 
 }
 
@@ -22,15 +35,10 @@
 
 #myCarousel img {
   min-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 
-.ad1{
-
-background: url(assets/Me.jpg) no-repeat center center fixed;
-
-}
 
 
 .fill{
@@ -48,14 +56,14 @@ background: url(assets/Me.jpg) no-repeat center center fixed;
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
+  max-width: 759px;
   height: 500px;
 
 }
 
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -76,3 +84,51 @@ background: url(assets/Me.jpg) no-repeat center center fixed;
     line-height: 1.4;
   }
 }
+
+
+#myCarousel a{
+  vertical-align:middle;
+
+
+}
+
+
+.supporting-2{
+  background-color:#222;
+  background-image:url(/assets/map-image.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 300px;
+  color : white;
+
+}
+
+
+#plane1{
+  position:relative;
+
+}
+
+
+#plane2 {
+  top: -90px;
+  position:relative;
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+
+#plane4 {
+  top: -100px;
+  left: 20;
+  position:relative;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+

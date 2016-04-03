@@ -235,7 +235,7 @@
 </section>
 
 <!-- About Section -->
-<section id="about">
+<section id="about" >
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -246,9 +246,30 @@
 
 
 
-    <div class="row">
+    <div class="row vertical-center">
       <div class="col-md-6">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/bass/you.svg"/>
+        <div class="row">
+          <img src="assets/galery/geek1.jpg" class="img-circle"  id="geek1"/>
+          <img src="assets/galery/geek10.jpg" class="img-circle"  id="geek2"/>
+          <img src="assets/galery/geek3.jpg" class="img-circle"  id="geek3"/>
+          <img src="assets/galery/geek5.jpg" class="img-circle"  id="geek4"/>
+          <img src="assets/galery/geek15.jpg" class="img-circle"  id="geek5"/>
+        </div>
+        <div class="row">
+          <img src="assets/galery/geek4.jpg" class="img-circle"  id="geek6"/>
+          <img src="assets/galery/geek2.jpg" class="img-circle"  id="geek7"/>
+          <img src="assets/galery/geek6.jpg" class="img-circle"  id="geek8"/>
+          <img src="assets/galery/geek7.jpg" class="img-circle"  id="geek9"/>
+          <img src="assets/galery/geek8.jpg" class="img-circle"  id="geek10"/>
+        </div>
+        <div class="row">
+          <img src="assets/galery/geek9.jpg" class="img-circle"  id="geek11"/>
+          <img src="assets/galery/geek11.jpg" class="img-circle"  id="geek12"/>
+          <img src="assets/galery/geek12.jpg" class="img-circle"  id="geek13"/>
+          <img src="assets/galery/geek13.jpg" class="img-circle"  id="geek14"/>
+          <img src="assets/galery/geek14.jpg" class="img-circle"  id="geek15"/>
+        </div>
+
       </div>
       <div class="col-md-6">
         <h2> Learn </h2>
@@ -257,26 +278,33 @@
     </div>
   </div>
   <div class="supporting-2" id="supporting-2">
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row vertical-center">
+      <div class="col-md-4">
+        <i class="fa fa-paper-plane" id="plane1"></i>
+        <i class="fa fa-paper-plane" id="plane4"></i>
+         <p id="cordenadas"></p>
+      </div>
+      <div class="col-md-4">
+
         <h2> Travel </h2>
         <p> I like to travel, to meet up with new cultures, try new food see diferent cities, meet new people make new friends and live greats adventures. </p>
       </div>
-      <div class="col-md-6">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/bass/everywhere.svg"/>
+      <div class="col-md-4">
+        <i class="fa fa-paper-plane" id="plane2"></i>
       </div>
     </div>
   </div>
 
   <div class="supporting-3">
-    <div class="row">
+    <div class="row vertical-center">
       <div class="col-md-6">
         <img src="https://s3.amazonaws.com/codecademy-content/projects/bass/connect.svg"/>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <h2> Sports </h2>
         <p> Since I was a kid I always like to do sports, skate, surf, snowboard, football, jiu jitso... I like then all, the most important is to keep in shave. Like they say, mind strong body strong </p>
       </div>
+
     </div>
   </div>
 </section>
@@ -357,13 +385,12 @@
 
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="icon-prev"></span>
   </a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="icon-next"></span>
   </a>
+
 </div>
 
 
@@ -430,33 +457,8 @@
   </div>
 </section>
 
-<!-- Clients Aside -->
-<aside class="clients">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="assets/logos/envato.jpg" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="assets/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="assets/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="assets/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-    </div>
-  </div>
-</aside>
+
+
 
 <!-- Contact Section -->
 <section id="contact">
@@ -701,11 +703,194 @@
   </div>
 </div>
 
+<script>
+
+  $(function(){
+      plane1();
+      plane2();
+
+      plane4();
+
+
+      function plane4(){
+          setTimeout(plane4, 70);
+          var position = $("#plane4").position();
+          if (position.top > 100){
+              $("#plane4").toggle('slow');
+              $("#plane4").position().left = 100;
+              $("#plane4").css({top: -100, left: 20});
+          }else{
+              $("#plane4").animate({
+                  top: "+=5px",
+                  left: "+=5px",
+              }, 1 );
+          }
+
+      }
 
 
 
 
 
+
+
+
+
+      function plane1(){
+          setTimeout(plane1, 30);
+          var position = $("#plane1").position();
+          if (position.left > 700){
+              $("#plane1").animate({
+                  top: "+=1px",
+                  left: "+=5px",
+              }, 1 );
+
+          }else{
+              $("#plane1").animate({
+                  top: "-=1px",
+                  left: "+=5px",
+              }, 1 );
+          }
+          if (position.left > 1000){
+              $("#plane1").toggle('slow');
+              $("#plane1").position().left = 100;
+              $("#plane1").css({top: 5, left: 50});
+          }
+      }
+
+
+
+
+
+      function plane2(){
+          setTimeout(plane2, 50);
+          var position = $("#plane2").position();
+          if (position.left > 500){
+              $("#plane2").animate({
+                  top: "-=1px",
+                  left: "-=5px",
+              }, 1 );
+
+          }else{
+              $("#plane2").animate({
+
+                  left: "-=5px",
+              }, 1 );
+          }
+          if (position.left < -650){
+              $("#plane2").toggle('slow');
+
+              $("#plane2").css({top: -20, left: 20});
+          }
+          var position = $('#plane2').position();
+
+          $('#cordenadas').text(position.right);
+      }
+
+
+
+
+
+  });
+
+
+
+
+</script>
+
+<script>
+   $('#geek2').hide();
+   $('#geek3').hide();
+   $('#geek4').hide();
+   $(function() {
+        sayHi();
+
+       geek1();
+       geek2();
+       geek3();
+       geek4();
+       geek5();
+       geek6();
+       geek7();
+       geek8();
+       geek9();
+       geek10();
+       geek11();
+       geek12();
+       geek13();
+       geek14();
+       geek15();
+
+       function geek1(){
+           setTimeout(geek1, 5500);
+           $('#geek1').toggle('slow');
+       }
+
+       function geek2(){
+           setTimeout(geek2, 9000);
+           $('#geek2').toggle('slow');
+       }
+       function geek3(){
+           setTimeout(geek3, 15000);
+           $('#geek3').toggle('slow');
+       }
+       function geek4(){
+           setTimeout(geek4, 5500);
+           $('#geek4').toggle('slow');
+       }
+       function geek5(){
+           setTimeout(geek5, 5500);
+           $('#geek5').toggle('slow');
+       }
+       function geek6(){
+           setTimeout(geek6, 5500);
+           $('#geek6').toggle('slow');
+       }
+       function geek7(){
+           setTimeout(geek7, 5500);
+           $('#geek7').toggle('slow');
+       }
+       function geek8(){
+           setTimeout(geek8, 6500);
+           $('#geek8').toggle('slow');
+       }
+       function geek9(){
+           setTimeout(geek9, 10500);
+           $('#geek9').toggle('slow');
+       }
+       function geek10(){
+           setTimeout(geek10, 9500);
+           $('#geek10').toggle('slow');
+       }
+       function geek11(){
+           setTimeout(geek11, 10500);
+           $('#geek11').toggle('slow');
+       }
+       function geek12(){
+           setTimeout(geek12, 25500);
+           $('#geek12').toggle('slow');
+       }
+       function geek13(){
+           setTimeout(geek13, 10000);
+           $('#geek13').toggle('slow');
+       }
+       function geek14(){
+           setTimeout(geek14,5500);
+           $('#geek14').toggle('slow');
+       }
+       function geek15(){
+           setTimeout(geek15,7500);
+           $('#geek15').toggle('slow');
+       }
+
+
+       function sayHi() {
+            setTimeout(sayHi,5000);
+            $('#geek1').toggle('slow');
+        }
+    });
+
+</script>
 
 
 
