@@ -112,6 +112,30 @@ h1,h2,h3,h4,h5,h6{
 .navbar-default .nav li a:hover,.navbar-default .nav li a:focus{
     color:#4487FB;outline:0
 }
+
+
+#topMenu{
+    display: none;
+
+}
+
+
+#seeMore{
+    display: none;
+}
+
+#welcome{
+    display: none;
+}
+
+#toMyPage{
+    display: none;
+}
+
+
+
+
+
 .navbar-default .navbar-nav>.active>a{
     border-radius:0;
     color:#fff;
@@ -143,6 +167,9 @@ header{
     background-image:url(/assets/header-bg.jpg);
     background-repeat:none;
     background-attachment:fixed;
+
+    height: 900px;
+
     background-position:center center;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -505,4 +532,69 @@ body{
 }
 
 
+#myImage{
+    width: 300px;
+    height: 300px;
+}
+
+#team .container{
+    background: transparent;
+
+
+}
+
+#move {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1250px, 40%);
+    animation: move 4s linear 1;
+}
+
+#board {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 400px;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: flip 4s linear 1;
+    transform-style: preserve-3d;
+
+.wheel {
+    animation: roll 600ms linear infinite;
+}
+}
+
+
+@keyframes move {
+    0% 	 {transform: translate(1250px, 40%)}
+    100% {transform: translate(-1200px, 40%)}
+}
+
+@keyframes roll {
+    0% 	 {stroke-dashoffset: 0}
+    100% {stroke-dashoffset: 250}
+}
+
+@keyframes flip {
+    0%		{transform: translateY(0) 	 	rotate(0) 		rotateX(0)}
+    40% 	{transform: translateY(0) 	 	rotate(0)		 	rotateX(0)}
+    42.5% {transform: translateY(0) 	 	rotate(15deg) rotateX(30deg)}
+    47.5% {transform: translateY(-110px) rotate(10deg) rotateX(160deg)}
+    50% 	{transform: translateY(-110px) rotate(5deg)  rotateX(260deg)}
+    55% 	{transform: translateY(-105px) rotate(0deg)  rotateX(340deg)}
+    57.5% {transform: translateY(-100px) rotate(0deg)  rotateX(360deg)}
+    60% 	{transform: translateY(0) 	 	rotate(0deg)  rotateX(360deg)}
+    100% 	{transform: translateY(0) 	 	rotate(0deg)  rotateX(360deg)}
+}
 

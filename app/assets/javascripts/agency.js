@@ -24,3 +24,18 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+$(document).ready(function(){
+   // $('#seeMore').fadeIn('slow');
+
+    $("#welcome").delay(200).fadeIn('slow');
+    $("#toMyPage").delay(2100).fadeIn('slow');
+    $("#topMenu").delay(4300).fadeIn('slow');
+    $('#seeMore').delay(3700).fadeIn('slow');
+
+});
+
+
+
+

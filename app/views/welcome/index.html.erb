@@ -40,7 +40,7 @@
 <body id="page-top" class="index">
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav id="topMenu" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header page-scroll">
@@ -80,12 +80,34 @@
 <!-- Header -->
 <header>
   <div class="container">
+
+    <div id="move">
+      <div id="board">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 120">
+          <g fill="none" stroke-width="20" stroke-miterlimit="2" stroke-linecap="round">
+            <path d="m25 15.6651c0 0 20 32.4928 60 32.4928h280c40 0 60-32.4928 60-32.4928" stroke="#3c4042"/>
+
+            <path d="m92.3395 87.2264c0-11.0456 8.9545-20 20.0005-20 11.045 0 20 8.9544 20 20.0001 0 11.0457-8.955 19.9995-20 19.9995-11.046 0-20.0005-8.9539-20.0005-19.9996" stroke="#30bced"/>
+            <path d="m322.119 87.2264c0-11.0456 8.955-20 20-20 11.046 0 20 8.9544 20 20.0001 0 11.0457-8.954 19.9995-20 19.9995-11.045 0-20-8.9539-20-19.9996" stroke="#30bced"/>
+
+            <path class="wheel" d="m92.3395 87.2264c0-11.0456 8.9545-20 20.0005-20 11.045 0 20 8.9544 20 20.0001 0 11.0457-8.955 19.9995-20 19.9995-11.046 0-20.0005-8.9539-20.0005-19.9996" stroke="#2696BF"  stroke-dasharray="31.42"/>
+            <path class="wheel" d="m322.119 87.2264c0-11.0456 8.955-20 20-20 11.046 0 20 8.9544 20 20.0001 0 11.0457-8.954 19.9995-20 19.9995-11.045 0-20-8.9539-20-19.9996" stroke="#2696BF"  stroke-dasharray="31.42"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+
     <div class="intro-text">
-      <div class="intro-lead-in">Welcome To My Page!</div>
-      <div class="intro-heading"></div>
-      <a href="#services" class="page-scroll btn btn-xl">See More</a>
+      <div id="welcome" class="intro-lead-in">Welcome</div>
+      <div id="toMyPage" class="intro-lead-in">To My Page!</div>
+      <br/>
+      <br/>
+      <a href="#services" id="seeMore" class="page-scroll btn btn-primary">See More</a>
     </div>
   </div>
+
+
 </header>
 
 <!-- Services Section -->
@@ -94,7 +116,7 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Skills</h2>
-        <h3 class="section-subheading text-muted">Take a look at my skills, I kinda know couple of things!</h3>
+        <h3 class="section-subheading text-muted">Here you can see check a bit about what I can do!</h3>
       </div>
     </div>
     <div class="row text-center">
@@ -104,7 +126,7 @@
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
         <h4 class="service-heading">Programming</h4>
-        <p class="text-muted">I love to code, thats right, programming is like oxigen for me. Since I started study computers 7 years ago I've learned lots of diferents technologys.
+        <p class="text-muted">I am a software developer, thats right, I like to plan, create and implement software. Since I started to study computers 7 years ago I've learned lots of diferents technologys.
 
         </p>
       </div>
@@ -114,7 +136,7 @@
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
         <h4 class="service-heading">Experiences </h4>
-        <p class="text-muted">I'm working with it projects in Banco do Brasil, implementing systems, creating reports and developing business strategy. I've worked in a software house as well named TFV as junior programer.</p>
+        <p class="text-muted">I'm working with it projects in Banco do Brasil, implementing systems, creating reports and developing business strategy. I've worked in a software house as well named TFV as junior programmer.</p>
       </div>
       <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -122,13 +144,13 @@
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
         <h4 class="service-heading">Studies</h4>
-        <p class="text-muted">I've finished a thecnical course in programming and managing IT systems. I'm taking now a degree in computer engeniring</p>
+        <p class="text-muted">I've finished a thecnical course in programming and managing IT systems. I'm taking now a degree in computer engeniring besides that, I have a Front End Developer certificate from CodeCamp and Ruby on Rails developer certification and a few more that you can see on my curriculum bellow</p>
       </div>
 
     </div>
         <br/>
     <br/>
-    <a href="/CV-EN.pdf" class="page-scroll btn btn-xl"  target="_blank"> <i class="fa fa-download"></i>  Currículum</a>
+    <a href="/CV-EN2.pdf" class="page-scroll btn btn-primary"  target="_blank"> <i class="fa fa-download"></i>  Currículum</a>
 
   </div>
 </section>
@@ -186,13 +208,13 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
-        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+        <a href="http://codepen.io/GuilhermeFerreiraAraujo/full/pyOQJm/" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="fa fa-plus fa-3x"></i>
             </div>
           </div>
-          <img src="assets/portfolio/golden.png" class="img-responsive" alt="">
+          <img src="assets/portfolio/wikipediasearch.png" class="img-responsive" alt="">
         </a>
         <div class="portfolio-caption">
           <h4>Golden</h4>
@@ -200,31 +222,31 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
-        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+        <a href="http://codepen.io/GuilhermeFerreiraAraujo/pen/ONweqK" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="fa fa-plus fa-3x"></i>
             </div>
           </div>
-          <img src="assets/portfolio/escape.png" class="img-responsive" alt="">
+          <img src="assets/portfolio/quotes.png" class="img-responsive" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Escape</h4>
-          <p class="text-muted">Website Design</p>
+          <h4>Wikipedia</h4>
+          <p class="text-muted">Wekipedia search engine</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
-        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+        <a href="http://codepen.io/GuilhermeFerreiraAraujo/full/ZWjgGJ/" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="fa fa-plus fa-3x"></i>
             </div>
           </div>
-          <img src="assets/portfolio/dreams.png" class="img-responsive" alt="">
+          <img src="assets/portfolio/weather.png" class="img-responsive" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Dreams</h4>
-          <p class="text-muted">Website Design</p>
+          <h4>Weather</h4>
+          <p class="text-muted">Local Weather</p>
         </div>
       </div>
     </div>
@@ -236,13 +258,12 @@
 
 
 
-<!-- Team Section -->
+<!-- Contact section -->
 <section id="team" class="bg-light-gray">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Contact Info</h2>
-
       </div>
     </div>
     <div class="row">
@@ -253,14 +274,13 @@
       </div>
       <div class="col-sm-4">
         <div class="team-member">
-          <img src="assets/Me.jpg" class="img-responsive img-circle" alt="">
+          <img src="assets/Me.jpg" id="myImage" class="img-responsive img-circle" alt="">
           <h4>Guilherme Araujo</h4>
           <p class="text-muted">Software developer</p>
 
           <div>
             <i class="fa fa-mobile"></i> +351 912 665 568
           </div>
-
 
           <div>
             <i class="fa fa-envelope-o"></i> gui_s3@hotmail.com
