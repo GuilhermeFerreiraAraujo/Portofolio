@@ -598,3 +598,7 @@ svg {
     100% 	{transform: translateY(0) 	 	rotate(0deg)  rotateX(360deg)}
 }
 
+.img-responsive {
+    height: 200px;
+    width: 100%;
+}
