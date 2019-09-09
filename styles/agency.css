@@ -167,8 +167,7 @@ header{
     background-image:url('../images/header.jpg');
     background-repeat:none;
     background-attachment:fixed;
-
-    height: 900px;
+    height: 1000px;
 
     background-position:center center;
     -webkit-background-size:cover;
