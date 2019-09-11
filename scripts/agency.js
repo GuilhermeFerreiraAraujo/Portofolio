@@ -1,13 +1,10 @@
-
-
-
 $(document).ready(function(){
    // $('#seeMore').fadeIn('slow');
 
     $("#welcome").delay(200).fadeIn('slow');
-    $("#toMyPage").delay(2100).fadeIn('slow');
-    $("#topMenu").delay(4300).fadeIn('slow');
-    $('#seeMore').delay(3700).fadeIn('slow');
+    $("#toMyPage").delay(1000).fadeIn('slow');
+    $("#topMenu").delay(1500).fadeIn('slow');
+    $('#seeMore').delay(2000).fadeIn('slow');
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
