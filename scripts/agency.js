@@ -53,9 +53,5 @@ window.onscroll = function loadProgressBar() {
     var percentage = Math.floor(scrollTop / scrollMaxY * 100);
     var navProgressBar = this.document.getElementById("navProgressBar");
 
-    navProgressBar.setAttribute("value", percentage);
+    navProgressBar.style.width = percentage+"%" ;
 };
-
-
-
-
