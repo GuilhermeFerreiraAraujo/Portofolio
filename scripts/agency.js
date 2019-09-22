@@ -1,8 +1,8 @@
 $(document).ready(function () {
     // $('#seeMore').fadeIn('slow');
 
-    $("#welcome").delay(200).fadeIn('slow');
-    $("#toMyPage").delay(1000).fadeIn('slow');
+    $("#quote").delay(200).fadeIn('slow');
+    $("#quoteAuthor").delay(1000).fadeIn('slow');
     $("#topMenu").delay(1500).fadeIn('slow');
     $('#seeMore').delay(2000).fadeIn('slow');
 
@@ -29,6 +29,23 @@ $(document).ready(function () {
 
 });
 
+window.onload = function () {
+    var url = 'https://andruxnet-random-famous-quotes.p.mashape.com/';
+    var req = new XMLHttpRequest();
+
+    req.open('GET', url, true);
+    req.setRequestHeader('X-Mashape-Key', 'x20kPEiH1DmshALju5NBqF27kW0Kp14mTH5jsnnAuyabe2r9uf');
+
+    req.send();
+
+    req.onload = function() {
+        var quote = document.getElementById("quote");
+        var author = document.getElementById("quoteAuthor");
+        var response = JSON.parse(req.response);
+        quote.innerText = response[0].quote;
+        author.innerText = "by: " + response[0].author ;
+    }
+}
 
 window.onscroll = function loadProgressBar() {
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
