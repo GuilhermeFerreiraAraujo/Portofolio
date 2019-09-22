@@ -119,7 +119,6 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
-
 #seeMore{
     display: none;
 }
@@ -131,9 +130,6 @@ h1,h2,h3,h4,h5,h6{
 #toMyPage{
     display: none;
 }
-
-
-
 
 
 .navbar-default .navbar-nav>.active>a{
@@ -600,4 +596,37 @@ svg {
 .img-responsive {
     height: 200px;
     width: 100%;
+}
+
+
+#topMenu{
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+#topMenu .container{
+    padding-bottom: 10px;
+}
+
+.navprogress {
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    padding:0;
+    position: fixed;
+    border: none;
+    z-index: 100;
+    background-color: transparent;
+}
+
+.navprogress::-webkit-progress-value {
+    background-color: #4487FB;
+}
+
+.navprogress::-moz-progress-bar { 
+    background: #4487FB; 
+}
+
+.navprogress::-webkit-progress-value { 
+    background: #4487FB; 
 }
