@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // $('#seeMore').fadeIn('slow');
 
     $("#quote").delay(200).fadeIn('slow');
     $("#quoteAuthor").delay(1000).fadeIn('slow');
