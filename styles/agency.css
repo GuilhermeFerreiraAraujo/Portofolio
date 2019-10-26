@@ -9,9 +9,6 @@ p{
     font-size:14px;
     line-height:1.75
 }
-p.large{
-    font-size:16px
-}
 a,a:hover,a:focus,a:active,a.active{
     outline:0
 }
@@ -56,29 +53,7 @@ h1,h2,h3,h4,h5,h6{
     color:#4487FB;
     background-color:#fff
 }
-.btn-xl{
-    color:#fff;
-    background-color:#4487FB;
-    border-color:#4487FB;
-    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform:uppercase;
-    font-weight:700;
-    border-radius:3px;
-    font-size:18px;padding:20px 40px
-}
-.btn-xl:hover,.btn-xl:focus,.btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl{
-    color:#fff;
-    background-color:#4487FB;
-    border-color:#4487FB
-}.btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl{
-     background-image:none
- }
-.btn-xl.disabled,.btn-xl[disabled],fieldset[disabled] .btn-xl,.btn-xl.disabled:hover,.btn-xl[disabled]:hover,fieldset[disabled] .btn-xl:hover,.btn-xl.disabled:focus,.btn-xl[disabled]:focus,fieldset[disabled] .btn-xl:focus,.btn-xl.disabled:active,.btn-xl[disabled]:active,fieldset[disabled] .btn-xl:active,.btn-xl.disabled.active,.btn-xl[disabled].active,fieldset[disabled] .btn-xl.active{
-    background-color:#4487FB;
-    border-color:#4487FB}.btn-xl .badge{
-                             color:#4487FB;
-                             background-color:#fff
-                         }
+
 .navbar-default{
     background-color:#222;
     border-color:transparent
@@ -136,32 +111,12 @@ h1,h2,h3,h4,h5,h6{
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{
     color:#fff;
     background-color:#4487FB}
-@media (min-width:768px){.navbar-default{
-    background-color:transparent;
-    padding:25px 0;
-    -webkit-transition:padding .3s;
-    -moz-transition:padding .3s;
-    transition:padding .3s;
-    border:0}
-    .navbar-default .navbar-brand{
-        font-size:2em;
-        -webkit-transition:all .3s;
-        -moz-transition:all .3s;
-        transition:all .3s}
-    .navbar-default .navbar-nav>.active>a{
-        border-radius:3px
-    }
-    .navbar-default.navbar-shrink{
-        background-color:#222;
-        padding:10px 0}
-    .navbar-default.navbar-shrink .navbar-brand{
-        font-size:1.5em}}
+
 header{
     background-image:url('../images/header.jpg');
     background-repeat:none;
     background-attachment:fixed;
     height: 1000px;
-
     background-position:center center;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -186,22 +141,7 @@ header .intro-text .intro-heading{
     font-size:50px;
     line-height:50px;
     margin-bottom:25px}
-@media (min-width:768px){header .intro-text{
-    padding-top:300px;
-    padding-bottom:200px}
-    header .intro-text .intro-lead-in{
-        font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-style:italic;
-        font-size:40px;
-        line-height:40px;
-        margin-bottom:25px}
-    header .intro-text .intro-heading{
-        font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-transform:uppercase;
-        font-weight:700;
-        font-size:75px;
-        line-height:75px;
-        margin-bottom:50px}}
+
 section{
     padding:100px 0}
 section h2.section-heading{
@@ -215,8 +155,73 @@ section h3.section-subheading{
     font-style:italic;
     font-weight:400;
     margin-bottom:75px}
-@media (min-width:768px){
-    section{padding:150px 0}}
+
+
+@media (min-width: 768px) {
+    .navbar-default{
+        background-color:transparent;
+        padding:25px 0;
+        -webkit-transition:padding .3s;
+        -moz-transition:padding .3s;
+        transition:padding .3s;
+        border:0}
+    .navbar-default .navbar-brand{
+        font-size:2em;
+        -webkit-transition:all .3s;
+        -moz-transition:all .3s;
+        transition:all .3s}
+    .navbar-default .navbar-nav>.active>a{
+        border-radius:3px
+    }
+    .navbar-default.navbar-shrink{
+        background-color:#222;
+        padding:10px 0}
+    .navbar-default.navbar-shrink .navbar-brand{
+        font-size:1.5em}
+
+    header .intro-text{
+        padding-top:300px;
+        padding-bottom:200px
+    }
+
+    header .intro-text .intro-lead-in{
+        font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-style:italic;
+        font-size:40px;
+        line-height:40px;
+        margin-bottom:25px}
+    header .intro-text .intro-heading{
+        font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-transform:uppercase;
+        font-weight:700;
+        font-size:75px;
+        line-height:75px;
+        margin-bottom:50px}
+    section{
+        padding:150px 0
+    }
+
+    #topMenu{
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    }
+
+    #topMenu .container{
+        padding-bottom: 10px;
+    }
+
+    .navprogress {
+        height: 5px;
+        margin: 0;
+        padding:0;
+        position: fixed;
+        border: none;
+        z-index: 100;
+        background-color: #4487FB;
+        border: none;
+    }
+}
+
 .service-heading{
     margin:15px 0;
     text-transform:none}
@@ -268,8 +273,9 @@ section h3.section-subheading{
 #portfolio *{z-index:2}
 
 
-@media (min-width:1200px){.timeline>li{
-    min-height:170px}
+@media (min-width:1200px){
+    .timeline>li{
+        min-height:170px}
         
     .team-member{
         text-align:center;
@@ -283,58 +289,16 @@ section h3.section-subheading{
         text-transform:none}
     .team-member p{
         margin-top:0}
-    aside.clients img{
-        margin:50px auto}
-
+    
     section#contact{
+        color: white;
         background-color:#222;
         background-image:url(/assets/map-image.png);
         background-position:center;
         background-repeat:no-repeat}
     section#contact .section-heading{
         color:#fff}
-    section#contact .form-group{
-        margin-bottom:25px}
-    section#contact .form-group input,section#contact .form-group textarea{
-        padding:20px}
-    section#contact .form-group input.form-control{
-        height:auto}
-    section#contact .form-group textarea.form-control{
-        height:236px}
-    section#contact .form-control:focus{
-        border-color:#4487FB;box-shadow:none}
-    section#contact ::-webkit-input-placeholder{
-        font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-transform:uppercase;
-        font-weight:700;color:#bbb}
-    section#contact :-moz-placeholder{
-        font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-transform:uppercase;
-        font-weight:700;color:#bbb}
-    section#contact ::-moz-placeholder{
-        font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-transform:uppercase;
-        font-weight:700;
-        color:#bbb}
-    section#contact :-ms-input-placeholder{
-        font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-transform:uppercase;
-        font-weight:700;color:#bbb}
-    section#contact .text-danger{
-        color:#4487FB}footer{
-                        padding:25px 0;
-                        text-align:center}
-    footer span.copyright{
-        line-height:40px;
-        font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-transform:uppercase;
-        text-transform:none}
-    footer ul.quicklinks{
-        margin-bottom:0;
-        line-height:40px;
-        font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-transform:uppercase;
-        text-transform:none}
+
     ul.social-buttons{
         margin-bottom:0}
     ul.social-buttons li a{
@@ -352,54 +316,15 @@ section h3.section-subheading{
         transition:all .3s}
     ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a:active{
         background-color:#4487FB}
-    .btn:focus,.btn:active,.btn.active,.btn:active:focus{
-        outline:0}.portfolio-modal .modal-content{
-                    border-radius:0;
-                    background-clip:border-box;
-                    -webkit-box-shadow:none;
-                    box-shadow:none;
-                    border:0;
-                    min-height:100%;
-                    padding:100px 0;
-                    text-align:center}
-                    
+ 
     #myImage{
-        width: 300px;
-        height: 300px;
-    }
-
-    #team .container{
-        background: transparent;
+        margin-top: 20px;
+        width: 250px;
+        height: 250px;
     }
 
     .img-responsive {
         height: 200px;
         width: 100%;
-    }
-}
-
-#topMenu{
-    padding-bottom: 0;
-    margin-bottom: 10px;
-}
-
-#topMenu .container{
-    padding-bottom: 10px;
-}
-
-.navprogress {
-    height: 5px;
-    margin: 0;
-    padding:0;
-    position: fixed;
-    border: none;
-    z-index: 100;
-    background-color: #4487FB;
-    border: none;
-}
-
-@media screen and (max-width: 768px) {
-    .navprogress{
-        display: none;
     }
 }
