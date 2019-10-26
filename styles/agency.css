@@ -272,11 +272,24 @@ section h3.section-subheading{
     margin:0}
 #portfolio *{z-index:2}
 
+section#contact{
+        color: white;
+        background-color:#222;
+        background-position:center;
+        background-repeat:no-repeat}
+section#contact .section-heading{
+        color:#fff}
 
-@media (min-width:1200px){
-    .timeline>li{
-        min-height:170px}
-        
+#myImage{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.img-responsive {
+    height: 200px;
+    width: 100%;
+}
     .team-member{
         text-align:center;
         margin-bottom:50px}
@@ -289,15 +302,10 @@ section h3.section-subheading{
         text-transform:none}
     .team-member p{
         margin-top:0}
-    
-    section#contact{
-        color: white;
-        background-color:#222;
-        background-image:url(/assets/map-image.png);
-        background-position:center;
-        background-repeat:no-repeat}
-    section#contact .section-heading{
-        color:#fff}
+
+@media (min-width:1200px){
+    .timeline>li{
+        min-height:170px}
 
     ul.social-buttons{
         margin-bottom:0}
@@ -316,15 +324,4 @@ section h3.section-subheading{
         transition:all .3s}
     ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a:active{
         background-color:#4487FB}
- 
-    #myImage{
-        margin-top: 20px;
-        width: 250px;
-        height: 250px;
-    }
-
-    .img-responsive {
-        height: 200px;
-        width: 100%;
-    }
 }
